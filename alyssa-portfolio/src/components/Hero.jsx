@@ -14,7 +14,7 @@ function Hero() {
         </p>
 
         <div className="hero-buttons">
-          <a href="/projects" className="projects-btn">
+          <a href=#projects" className="projects-btn">
             View Projects
           </a>
 
