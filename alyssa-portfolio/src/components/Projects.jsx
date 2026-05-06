@@ -21,7 +21,7 @@ description: "Responsive personal portfolio built with React and Vite.",
 ];
 
 return (
-<section className="projects-section">
+<section id="projects" className="projects-section">
 <h2>Projects</h2>
 
 <div className="timeline-container">
