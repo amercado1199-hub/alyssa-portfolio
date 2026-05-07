@@ -4,11 +4,7 @@ import ProjectsPage from "./pages/ProjectsPage";
 import "./App.css";
 
 function Home() {
-return (
-<div>
-<Hero />
-</div>
-);
+return <Hero />;
 }
 
 function App() {
@@ -23,4 +19,5 @@ return (
 }
 
 export default App;
+
 
