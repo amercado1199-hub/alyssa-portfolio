@@ -14,14 +14,9 @@ function Hero() {
         </p>
 
         <div className="hero-buttons">
-          <button
-            className="projects-btn"
-            onClick={() => {
-                document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
-            }}
-          >
+          <a href="/projects" className="projects-btn">
             View Projects
-          </button>
+          </a>
 
           <a
             href="/resume.pdf"
