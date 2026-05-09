@@ -45,6 +45,16 @@ A time tracking and pay calculator app that tracks hours,
 overtime, and estimated earnings.
 </p>
 </div>
+
+</div>
+<div className="project-card">
+<span className="project-tag">Python</span>
+<h3>Project Management CLI Tool</h3>
+<p>
+A command-line application built with Python for managing projects,
+tracking tasks, and organizing workflow data through an interactive
+terminal interface.
+</p>
 </div>
 </section>
 
