@@ -1,0 +1,141 @@
+.about-section {
+  padding: 100px 0;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(12, 14, 20, 0.95),
+      rgba(6, 8, 13, 1)
+    );
+}
+
+.about-container {
+  width: min(1200px, calc(100% - 48px));
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+
+  gap: 70px;
+  align-items: center;
+}
+
+.about-text h2 {
+  margin: 8px 0 0;
+
+  color: #ffffff;
+
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+}
+
+.section-label {
+  color: #ff68af;
+
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.about-line {
+  width: 45px;
+  height: 3px;
+
+  margin: 20px 0 28px;
+
+  background: #ff68af;
+
+  border-radius: 10px;
+
+  box-shadow: 0 0 12px rgba(255, 104, 175, 0.6);
+}
+
+.about-text p {
+  color: #c8cbd3;
+
+  font-size: 1rem;
+  line-height: 1.8;
+
+  margin-bottom: 16px;
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 18px;
+}
+
+.about-card {
+  min-height: 190px;
+
+  padding: 24px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(20, 23, 31, 0.95),
+      rgba(11, 13, 19, 0.95)
+    );
+
+  border: 1px solid rgba(255, 104, 175, 0.28);
+  border-radius: 14px;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+
+  border-color: #ff68af;
+
+  box-shadow: 0 15px 40px rgba(255, 104, 175, 0.12);
+}
+
+.about-card svg {
+  color: #ff68af;
+
+  font-size: 1.8rem;
+
+  margin-bottom: 16px;
+}
+
+.about-card h3 {
+  margin: 0 0 10px;
+
+  color: #ffffff;
+
+  font-size: 1.05rem;
+}
+
+.about-card p {
+  margin: 0;
+
+  color: #aeb2bd;
+
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-section {
+    padding: 75px 0;
+  }
+
+  .about-container {
+    width: min(100% - 30px, 1200px);
+  }
+
+  .about-cards {
+    grid-template-columns: 1fr;
+  }
+}

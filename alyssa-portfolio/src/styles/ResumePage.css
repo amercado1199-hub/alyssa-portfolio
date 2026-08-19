@@ -1,0 +1,471 @@
+.resume-page {
+  background: #06080d;
+  color: #ffffff;
+}
+
+.resume-container {
+  width: min(1150px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+
+/* HERO */
+
+.resume-hero {
+  padding: 110px 0 100px;
+
+  background:
+    radial-gradient(
+      circle at 70% 30%,
+      rgba(255, 72, 161, 0.11),
+      transparent 30%
+    ),
+    #06080d;
+
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.resume-hero h1 {
+  margin: 8px 0 20px;
+
+  font-size: clamp(3.2rem, 7vw, 5.8rem);
+  line-height: 1;
+  letter-spacing: -0.06em;
+}
+
+.resume-hero h1 span {
+  color: #ff68af;
+}
+
+.resume-intro {
+  max-width: 700px;
+
+  color: #b6bbc5;
+
+  line-height: 1.8;
+
+  margin-bottom: 28px;
+}
+
+
+/* BUTTON */
+
+.resume-main-button {
+  min-height: 48px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  padding: 0 20px;
+
+  color: #101017;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ff9acb,
+      #ff5ba8
+    );
+
+  border-radius: 8px;
+
+  font-weight: 700;
+
+  transition: 0.2s ease;
+}
+
+.resume-main-button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 30px rgba(255,91,168,0.25);
+}
+
+
+/* SECTIONS */
+
+.resume-section {
+  padding: 100px 0;
+}
+
+.resume-section + .resume-section {
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.resume-education-section,
+.resume-project-section {
+  background: #0a0c12;
+}
+
+.resume-heading {
+  margin-bottom: 40px;
+}
+
+.resume-heading h2 {
+  margin: 5px 0 0;
+
+  font-size: clamp(2rem, 4vw, 3rem);
+
+  letter-spacing: -0.04em;
+}
+
+
+/* EXPERIENCE */
+
+.resume-timeline {
+  max-width: 900px;
+
+  position: relative;
+}
+
+.resume-timeline::before {
+  content: "";
+
+  position: absolute;
+
+  top: 20px;
+  bottom: 20px;
+  left: 23px;
+
+  width: 1px;
+
+  background:
+    linear-gradient(
+      #ff68af,
+      rgba(255,104,175,0.1)
+    );
+}
+
+.resume-item {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns: 48px 1fr;
+
+  gap: 25px;
+
+  padding-bottom: 50px;
+}
+
+.resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume-item-icon {
+  position: relative;
+
+  z-index: 2;
+
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ff68af;
+
+  background: #12151d;
+
+  border: 1px solid rgba(255,104,175,0.4);
+
+  border-radius: 10px;
+}
+
+.resume-company {
+  margin-bottom: 4px;
+
+  color: #ff68af;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+.resume-item h3 {
+  margin: 0 0 12px;
+
+  font-size: 1.4rem;
+}
+
+.resume-description {
+  max-width: 700px;
+
+  color: #afb4bf;
+
+  line-height: 1.8;
+}
+
+.resume-tags {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin-top: 18px;
+}
+
+.resume-tags span {
+  padding: 5px 9px;
+
+  color: #ffacd3;
+
+  background: rgba(255,104,175,0.07);
+
+  border: 1px solid rgba(255,104,175,0.25);
+
+  border-radius: 999px;
+
+  font-size: 0.7rem;
+}
+
+
+/* EDUCATION */
+
+.resume-education-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px;
+}
+
+.resume-education-card {
+  display: grid;
+
+  grid-template-columns: auto 1fr;
+
+  gap: 20px;
+
+  padding: 28px;
+
+  background: #10131a;
+
+  border: 1px solid rgba(255,104,175,0.25);
+
+  border-radius: 14px;
+}
+
+.resume-card-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ff68af;
+
+  background: rgba(255,104,175,0.08);
+
+  border-radius: 10px;
+}
+
+.resume-education-card span {
+  color: #ff68af;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.resume-education-card h3 {
+  margin: 5px 0 10px;
+}
+
+.resume-education-card p {
+  color: #aeb3bd;
+
+  font-size: 0.87rem;
+
+  line-height: 1.7;
+}
+
+
+/* SKILLS */
+
+.resume-skills-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 18px;
+}
+
+.resume-skill-box {
+  padding: 25px;
+
+  background: #10131a;
+
+  border: 1px solid rgba(255,104,175,0.25);
+
+  border-radius: 12px;
+}
+
+.resume-skill-box h3 {
+  margin-bottom: 18px;
+}
+
+.resume-skill-box ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.resume-skill-box li {
+  position: relative;
+
+  margin-bottom: 9px;
+
+  padding-left: 15px;
+
+  color: #afb4bf;
+
+  font-size: 0.83rem;
+}
+
+.resume-skill-box li::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 7px;
+
+  width: 5px;
+  height: 5px;
+
+  background: #ff68af;
+
+  border-radius: 50%;
+}
+
+
+/* PROJECTS */
+
+.resume-project-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 18px;
+}
+
+.resume-project-card {
+  padding: 25px;
+
+  background: #10131a;
+
+  border: 1px solid rgba(255,104,175,0.25);
+
+  border-radius: 12px;
+}
+
+.resume-project-card h3 {
+  margin-bottom: 10px;
+}
+
+.resume-project-card p {
+  margin-bottom: 20px;
+
+  color: #aeb3bd;
+
+  line-height: 1.7;
+}
+
+.resume-project-card a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  color: #ff68af;
+
+  font-size: 0.8rem;
+
+  font-weight: 700;
+}
+
+
+/* CTA */
+
+.resume-bottom {
+  padding: 100px 0;
+}
+
+.resume-bottom-card {
+  padding: 65px 30px;
+
+  text-align: center;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(255,70,160,0.1),
+      transparent 45%
+    ),
+    #0d1017;
+
+  border: 1px solid rgba(255,104,175,0.3);
+
+  border-radius: 18px;
+}
+
+.resume-bottom-card h2 {
+  margin: 8px 0 15px;
+
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.resume-bottom-card > p:not(.section-label) {
+  max-width: 600px;
+
+  margin: 0 auto 25px;
+
+  color: #aeb3bd;
+
+  line-height: 1.8;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .resume-skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .resume-education-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .resume-container {
+    width: min(100% - 30px, 1150px);
+  }
+
+  .resume-hero {
+    padding: 80px 0 70px;
+  }
+
+  .resume-section,
+  .resume-bottom {
+    padding: 75px 0;
+  }
+
+  .resume-skills-grid,
+  .resume-project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-education-card {
+    grid-template-columns: 1fr;
+  }
+}

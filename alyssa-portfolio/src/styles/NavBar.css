@@ -1,0 +1,182 @@
+.navbar-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  width: 100%;
+
+  background: rgba(6, 8, 13, 0.88);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.navbar {
+  width: min(1200px, calc(100% - 48px));
+  height: 82px;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+}
+
+/* LOGO */
+
+.navbar-logo {
+  color: #ff68af;
+
+  font-family: cursive;
+  font-size: 1.55rem;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+}
+
+.navbar-logo span {
+  font-family: monospace;
+  font-weight: 700;
+}
+
+/* CENTER LINKS */
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+
+  gap: 30px;
+}
+
+.navbar-links a {
+  position: relative;
+
+  padding: 30px 0 27px;
+
+  color: #e7e7eb;
+
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.navbar-links a:hover {
+  color: #ff68af;
+}
+
+/* PINK LINE UNDER ACTIVE ROUTE */
+
+.navbar-links a.active {
+  color: #ff68af;
+}
+
+.navbar-links a.active::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 18px;
+
+  height: 2px;
+
+  background: #ff68af;
+
+  border-radius: 10px;
+
+  box-shadow: 0 0 8px rgba(255, 104, 175, 0.7);
+}
+
+/* RESUME BUTTON */
+
+.navbar-resume {
+  min-height: 42px;
+
+  padding: 0 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  color: #ff91c5;
+
+  border: 1px solid rgba(255, 104, 175, 0.65);
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.navbar-resume:hover {
+  background: rgba(255, 104, 175, 0.1);
+
+  border-color: #ff68af;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 7px 25px rgba(255, 104, 175, 0.12);
+}
+
+/* TABLET */
+
+@media (max-width: 950px) {
+  .navbar-links {
+    gap: 18px;
+  }
+
+  .navbar-links a {
+    font-size: 0.8rem;
+  }
+
+  .navbar-resume span {
+    display: none;
+  }
+
+  .navbar-resume {
+    width: 42px;
+    padding: 0;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 720px) {
+  .navbar {
+    width: min(100% - 30px, 1200px);
+    height: 70px;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-resume {
+    width: auto;
+
+    padding: 0 14px;
+  }
+
+  .navbar-resume span {
+    display: inline;
+  }
+}
