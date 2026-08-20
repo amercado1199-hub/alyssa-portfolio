@@ -66,18 +66,6 @@ function ResumePage() {
 
             <ResumeItem
               icon={<FiBriefcase />}
-              title="Life Insurance Agent"
-              company="Symmetry Financial"
-              description="Communicated complex financial concepts clearly to clients, managed client accounts and records, and solved customer issues efficiently under pressure."
-              tags={[
-                "Communication",
-                "Client Management",
-                "Problem Solving",
-              ]}
-            />
-
-            <ResumeItem
-              icon={<FiBriefcase />}
               title="Nursing Assistant"
               company="Eshyft"
               description="Worked alongside healthcare teams while maintaining accuracy, attention to detail, communication, and responsibility in a fast-paced environment."
@@ -110,7 +98,7 @@ function ResumePage() {
               </div>
 
               <div>
-                <span>SOFTWARE ENGINEERING</span>
+                <span>SOFTWARE ENGINEERING CERTIFICATION</span>
                 <h3>Flatiron School</h3>
 
                 <p>
@@ -128,12 +116,11 @@ function ResumePage() {
               </div>
 
               <div>
-                <span>PROFESSIONAL TRAINING</span>
-                <h3>Additional Education</h3>
+                <span>CERTIFIED NURSING ASSISTANT CERTIFICATION</span>
+                <h3>Angels Of Mercy</h3>
 
                 <p>
-                  CNA training through Angels of Mercy and life
-                  insurance training through EXCEL.
+                  CNA training through Angels of Mercy and CPR certification through the American Heart Association.
                 </p>
               </div>
             </article>
@@ -192,6 +179,7 @@ function ResumePage() {
                 "Postman",
                 "npm",
                 "Vitest",
+                "Docker",
                 "React Testing Library",
               ]}
             />
